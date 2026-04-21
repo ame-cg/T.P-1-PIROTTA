@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang= "es"> 
-<head> 
-<meta charset="utf-8">
-<title>TRABAJOS DE ARTES MULTIMEDIALES</title>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Trabajos de Artes Multimediales</title>
 </head>
 <body>
+
 <h1>TRABAJOS</h1>
+
 <ul>
-<li><a href="PRACTICA1/">Cartografías e Hipótesis sobre las Artes Multimediales</a></li>
+  <li>
+    <a href="practica1/">Cartografías e Hipótesis sobre las Artes Multimediales</a>
+  </li>
 </ul>
+
 </body>
 </html>
