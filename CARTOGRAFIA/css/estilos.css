@@ -153,6 +153,13 @@ svg {
 }
 
 /* ===== IMAGENES (MEJORADAS) ===== */
+.img-artista {
+  width: 100%;
+  max-width: 1090px;   /* mismo ancho para todas */
+  height: 790px;      /* misma altura */
+  object-fit: cover;  /* recorta sin deformar */
+  display: block;
+}
 .nodo img {
   width: 100%;
   height: 100%;
