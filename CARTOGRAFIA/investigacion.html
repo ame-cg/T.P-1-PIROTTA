@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Investigación</title>
+<link rel="stylesheet" href="css/estilos.css">
+
+<style>
+.contenido-bio {
+  display: none;
+  margin: 10px 0 20px 0;
+}
+
+h3 {
+  cursor: pointer;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Cartografías e Hipótesis sobre las Artes Multimediales</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="investigacion.html">Investigación</a>
+<a href="analisis.html">Análisis</a>
+<a href="cartografia.html">Cartografía</a>
+</nav>
+</header>
+
+<section class="contenido">
+
+<h2>Investigación</h2>
+
+<h3 onclick="toggleBio('bio1')" onmouseover="mostrarBio('bio1')" onmouseout="ocultarBio('bio1')">Escher</h3>
+<div id="bio1" class="contenido-bio">
+<p><strong>M. C. Escher</strong>, en los últimos años de su vida, instalado en Baarn, atravesaba un estado de salud frágil, con períodos de mejora que le permitieron retomar su producción. Hacia 1969 experimenta un último impulso creativo, trabajando con entusiasmo a pesar de las limitaciones físicas.</p>
+<p>En esta etapa final abandona el hiperdetalle extremo de sus obras anteriores y comienza a sugerir el infinito de manera más sintética y conceptual. Este cambio marca una madurez artística donde la complejidad visual se transforma en una exploración más profunda de las ideas.</p>
+</div>
+<img src="img/escher.jpg">
+<p>Artista neerlandés enfocado en geometría, infinito y estructuras imposibles.</p>
+
+<h3 onclick="toggleBio('bio2')" onmouseover="mostrarBio('bio2')" onmouseout="ocultarBio('bio2')">Lozano-Hemmer</h3>
+<div id="bio2" class="contenido-bio">
+<p><strong>Rafael Lozano-Hemmer</strong> (México, 1967) es un artista multimedia que desarrolla obras interactivas combinando arte, tecnología y participación del público. Formado en química física en Montreal, investiga la relación entre sistemas tecnológicos, vigilancia y presencia humana.</p>
+<p>Fue el primer artista en representar a México en la Bienal de Venecia en 2007 y ha recibido múltiples premios internacionales, incluyendo reconocimientos vinculados al arte interactivo como los BAFTA.</p>
+</div>
+<img src="img/hemmer.jpg">
+<p>Artista que trabaja con tecnología, algoritmos y sistemas generativos.</p>
+
+<h3 onclick="toggleBio('bio3')" onmouseover="mostrarBio('bio3')" onmouseout="ocultarBio('bio3')">Biopus</h3>
+<div id="bio3" class="contenido-bio">
+<p><strong>Biopus</strong> es un colectivo interdisciplinario que integra arte, ciencia y tecnología en sus producciones.</p>
+<p>La dirección artística y conceptual está a cargo de Emiliano Causa y Matías Romero Costas, con coordinación de David Bedoian. El equipo incluye programación, sonido, web y escultura, consolidando una práctica colaborativa donde la obra surge del cruce de múltiples disciplinas.</p>
+</div>
+<img src="img/biopus.jpg">
+<p>Colectivo argentino que desarrolla instalaciones interactivas con participación del público.</p>
+
+</section>
+
+<script>
+function toggleBio(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+
+function mostrarBio(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function ocultarBio(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+
+</body>
+</html>
